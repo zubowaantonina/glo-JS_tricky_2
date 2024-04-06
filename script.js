@@ -3,7 +3,7 @@ const playRound = () => {
     const isNumber = function (num) {
         return !isNaN(parseFloat(num)) && isFinite(num);
     };
-    const getNumber = () => Math.round(Math.random() * 100);//случайное число от 1 до 100
+    const getNumber = () => Math.ceil(Math.random() * 100);//случайное число от 1 до 100
     let firstNumber = getNumber()
     console.log(firstNumber);
     const steps = () => {
